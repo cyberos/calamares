@@ -203,10 +203,7 @@ struct NamedEnumTable
 
     /** @brief Find a value @p s in the table and return its name.
      *
-     * Returns an empty string if the value @p s is not found (this
-     * indicates that the table does not cover all of the values
-     * in `enum_t`, **or** that the passed-in value of @p s is
-     * not a legal value, e.g. via a static_cast<enum_t>).
+     * Returns empty string if the value is not found.
      */
     string_t find( enum_t s ) const
     {
