@@ -49,7 +49,7 @@ set( CALAMARES_VERSION_RC 1 )  # Set to 0 during release cycle, 1 during develop
 
 ### OPTIONS
 #
-option( INSTALL_CONFIG "Install configuration files" OFF )
+option( INSTALL_CONFIG "Install configuration files" ON )
 option( INSTALL_POLKIT "Install Polkit configuration" ON )
 option( INSTALL_COMPLETION "Install shell completions" OFF )
 # Options for the calamares executable
