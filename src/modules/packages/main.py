@@ -296,6 +296,22 @@ class PMPacman(PackageManager):
         check_target_env_call(["pacman", "-Su", "--noconfirm"])
 
 
+class PMPacstrap(PackageManager):
+    backend = "pacstrap"
+
+    def install(self, pkgs, from_local=False):
+        root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
+        subprocess.run(["cyberstrap", root_mount_point] + pkgs)
+
+    def remove(self, pkgs):
+        check_target_env_call(["pacman", "-Rs", "--noconfirm"] + pkgs)
+
+    def update_db(self):
+        pass
+
+    def update_system(self):
+        check_target_env_call(["pacman", "-Su", "--noconfirm"])
+
 class PMPamac(PackageManager):
     backend = "pamac"
 

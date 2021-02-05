@@ -8,7 +8,7 @@
 # Additional styling can be done using the stylesheet.qss
 # file, also in the branding directory.
 ---
-componentName:  default
+componentName:  cyber
 
 
 ### WELCOME / OVERALL WORDING
@@ -27,7 +27,7 @@ welcomeStyleCalamares:   false
 # up beyond its natural size? If false, the image does not grow
 # with the window but remains the same size throughout (this
 # may have surprising effects on HiDPI monitors).
-welcomeExpandingLogo:   true
+welcomeExpandingLogo:   false
 
 ### WINDOW CONFIGURATION
 #
@@ -121,18 +121,15 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         "@{NAME}"
-    shortProductName:    Generic
-    version:             2020.2 LTS
-    shortVersion:        2020.2
-    versionedName:       Fancy GNU/Linux 2020.2 LTS "Turgid Tuba"
-    shortVersionedName:  FancyGL 2020.2
-    bootloaderEntryName: FancyGL
-    productUrl:          https://calamares.io/
-    supportUrl:          https://github.com/calamares/calamares/wiki
-    knownIssuesUrl:      https://github.com/calamares/calamares/issues
-    releaseNotesUrl:     https://calamares.io/news/
-    donateUrl:           https://kde.org/community/donations/index.php
+    productName:         CyberOS
+    shortProductName:    CyberOS
+    version:             latest
+    shortVersion:        latest
+    versionedName:       CyberOS
+    shortVersionedName:  CyberOS
+    bootloaderEntryName: CyberOS
+    productUrl:          https://github.com/cyberos
+    knownIssuesUrl:      https://github.com/orgs/cyberos/projects/2
 
 # These images are loaded from the branding module directory.
 #
@@ -163,10 +160,10 @@ strings:
 # These filenames can also use substitutions from os-release (see above).
 images:
     # productBanner:       "banner.png"
-    productIcon:         "squid.png"
-    productLogo:         "squid.png"
+    productIcon:         "cyber-logo.svg"
+    productLogo:         "cyber-logo.svg"
     # productWallpaper:    "wallpaper.png"
-    productWelcome:      "languages.png"
+    productWelcome:      "welcome.png"
 
 # Colors for text and background components.
 #
