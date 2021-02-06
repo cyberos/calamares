@@ -1,0 +1,4 @@
+#!/bin/bash
+# Helper script to run Calamares with polkit,
+# since I guess it doesn't like being called from a .desktop file.
+/usr/bin/pkexec /usr/bin/calamares
