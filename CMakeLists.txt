@@ -647,6 +647,11 @@ install(
 )
 
 install(
+    FILES calamares_polkit
+    DESTINATION /usr/bin
+)
+
+install(
     FILES man/calamares.8
     DESTINATION ${CMAKE_INSTALL_MANDIR}/man8/
 )
