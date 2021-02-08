@@ -1,0 +1,4 @@
+#!/bin/bash
+# Calls Calamares with sudo. Additionally sets the default theme 
+# to the Cyber theme.
+/usr/bin/env sudo QT_QPA_PLATFORMTHEME=cyber /usr/bin/calamares
