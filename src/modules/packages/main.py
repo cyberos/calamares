@@ -301,7 +301,7 @@ class PMPacstrap(PackageManager):
 
     def install(self, pkgs, from_local=False):
         root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
-        subprocess.run(["cyberstrap", root_mount_point] + pkgs)
+        subprocess.check_call(["cyberstrap", root_mount_point] + pkgs)
 
     def remove(self, pkgs):
         check_target_env_call(["pacman", "-Rs", "--noconfirm"] + pkgs)
