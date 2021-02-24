@@ -47,7 +47,7 @@ def _change_mode(mode):
 
 
 def pretty_name():
-    return _("Install packages.")
+    return _("Installing packages.")
 
 
 def pretty_status_message():
@@ -56,17 +56,9 @@ def pretty_status_message():
             # Outside the context of an operation
             s = _("Processing packages (%(count)d / %(total)d)")
         else:
-            s = _("Install packages.")
-
-    elif mode_packages is INSTALL:
-        s = _n("Installing one package.",
-               "Installing %(num)d packages.", group_packages)
-    elif mode_packages is REMOVE:
-        s = _n("Removing one package.",
-               "Removing %(num)d packages.", group_packages)
+            s = _("Installing packages, please wait...")
     else:
-        # No mode, generic description
-        s = _("Install packages.")
+        s = _("Installing packages, please wait...")
 
     return s % {"num": group_packages,
                 "count": completed_packages,
