@@ -247,11 +247,11 @@ PartitionLayout::createPartitions( Device* dev,
         }
         PartitionInfo::setFormat( part, true );
         PartitionInfo::setMountPoint( part, entry.partMountPoint );
-        if ( !entry.partLabel.isEmpty() )
+        /*if ( !entry.partLabel.isEmpty() )
         {
             part->setLabel( entry.partLabel );
             part->fileSystem().setLabel( entry.partLabel );
-        }
+        }*/
         if ( !entry.partUUID.isEmpty() )
         {
             part->setUUID( entry.partUUID );
